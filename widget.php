@@ -106,5 +106,5 @@ f ( $d ) {
 // Tells WordPress that this widget has been created and that it should display in the list of available widgets.
 
 add_action( 'widgets_init', function(){
-     register_widget( 'MSNFitnessClassWidget' );
+     register_widget( 'FitnessClasses_Widget' );
 });
