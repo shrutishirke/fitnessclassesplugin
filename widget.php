@@ -18,7 +18,6 @@ class Fitnessclasses_Widget extends WP_Widget {
 	// Initialize the Widget
 	public function __construct() {
 		$widget_ops = array('classname' => 'fitnessclasses_widget', 'description' => __( 'A display of your available classes') );
-		// Adds a class to the widget and provides a description on the Widget page to describe what the widget does.
-		parent::__construct('fitnessclasses_widget', __('Weekly Classes', 'codediva'), $widget_ops);
+		// Adds a display of available classes to the wdiget page. It also gives a brief description in the backend of the WP dashboard.
+		parent::__construct('fitnessclasses_widget', __('Weekly Classes', 'msndevelopers'), $widget_ops);
 	}
-
