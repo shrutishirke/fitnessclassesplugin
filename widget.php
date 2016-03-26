@@ -36,7 +36,7 @@ class Fitnessclasses_Widget extends WP_Widget {
 		if ( $title ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-f ( $d ) {
+if ( $d ) {
 		//if the dropdown option is checked, gets a list of the archives and displays them by year in a dropdown list. 
 		$dropdown_id = "{$this->id_base}-dropdown-{$this->number}";
 ?>
