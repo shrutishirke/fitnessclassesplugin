@@ -1,14 +1,14 @@
 ===== PhireFitness ====
 /*
-* Theme Name: Weekly Classes Plugin
+* Theme Name: Monthly Specials Plugin
 * Theme URI: https://phoenix.sheridanc.on.ca/~ccit3424/
-* Description: PhireFitness Weekly Classes Plugin File
+* Description: Monthly Specials Plugin File that displays special events the client has within a month for Client PhireFitness Gym
 * Authors/Contributors: Mayank Sharma, Nayab Safdar and Shruti Shirke (MSN Developers)
 * Version: 1.0 03/26/2016
 * Author URI: https://phoenix.sheridanc.on.ca/~ccit3424/
 */ 
 
-Tags: custom post type, widget, plugin, posts
+Tags: custom post type, widget, plugin, posts, monthly specials, 
 
 Requires at least: 4.0
 Tested up to: 4.4.2
@@ -17,8 +17,9 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == 1. Description ==
-
-
+The Monthly Specials Plugin is designed to display the specials that a client may have every week within the month. This plugin 
+is versatile and can be used to display monthly promotions, coupons, classes and many more options all in a post format where the user can type in
+any content along with a featured image for the respective posts in the WP admin panel. 
 
 == 2. Definitions of Terms ==
 
@@ -26,7 +27,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 2.2 Widget: 
 
-2.3 WordPress Dashboard (WP Dashboard): This is the backend of WordPress (wp-admin) where you can edit your website. 
+2.3 WordPress Dashboard (WP Dashboard) Admin Panel: This is the backend of WordPress (wp-admin) where you can edit your website. 
 It is the very first screen that you see when you log into the admin section of the website. An easy way to remember if you 
 forget how to get to the site is add (wp-admin) at the end of your site's url, for example, https://phoenix.sheridanc.on.ca/~ccit3424/wp-admin
 The WP Dashboard gives an overview of the posts, pages, comments, and other activity of the site. It is where the user 
@@ -45,16 +46,16 @@ The purpose of the shortcode is to eliminate the need for users to write complex
 objects such as buttons, embed files and do many other things! 
 Read more on shortcodes here: https://codex.wordpress.org/Shortcode_API 
 
-
-
-
 == 3. Installation == 
+
 The following steps should be followed to install the plugin:
 1. Have a stable internet connection prior to installation
 2. In your WP admin panel, go to Plugins and click the Add New button 
 3. Click Upload and Choose File, then select the plugin's .zip file. Click Install Now.
 4. Click Activate under the plugins tab in the WP admin panel. 
-5. Go to Appearance in the left hand sidebar of the WP admin panel > then add
+5. Go to Appearance in the left hand sidebar of the WP admin panel > then add Monthly Specials Widget from the available widgets section to your sidebar.
+6. Check your website to see if the widget appears, a good way to check is if you create a post and a featured image for that post in the WP admin panel
+to see it appear on the widget. 
 
 
 
