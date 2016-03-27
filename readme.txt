@@ -23,9 +23,18 @@ any content along with a featured image for the respective posts in the WP admin
 
 == 2. Definitions of Terms ==
 
-2.1 Plugin:
+2.1 Plugin: A plugin generates a widget in the case of this Monthly Specials plugin which is generally written in PHP language.
+Plugins are designed to enhance the functionality that is present within WordPress through the functions it creates for a website.
+Plugins are coded in such a way that users can simply upload them under the plugins section of the WP admin panel and not have to
+worry about adding difficult code themselves. 
+Read more here: https://codex.wordpress.org/Plugins 
 
-2.2 Widget: 
+2.2 Widget: Widgets are in the front-end that usually appear within the widgets section under the Appearance tab of WordPress.
+Widgets are items that are related to the website's content. For example, a social media widget with clickable icons for a tech savvy blog. 
+Essentially, widgets present the data coded in the plugin file to the user in a presentable manner. Widgets give users options
+for added functionality to customize the plugin without having to use complex code. For example, adding a title to the widget from the
+Widgets section under appearance in WP admin panel, which then appears
+on the front-end as well. 
 
 2.3 WordPress Dashboard (WP Dashboard) Admin Panel: This is the backend of WordPress (wp-admin) where you can edit your website. 
 It is the very first screen that you see when you log into the admin section of the website. An easy way to remember if you 
@@ -64,5 +73,8 @@ to see it appear on the widget.
 == 5. Tips and Tricks of Plugin == 
 
 == 6. Change Log ==
+The most current version of this plugin is version 1.0
 
 == 7. Credits == 
+This plugin is created by MSN Developers (Mayank Sharma, Shruti Shirke and Nayab Safdar) with the aid of Laurie Rauch's Lecture slides from CCT460, labs created
+for CCT460, the WordPress Codex and other sources that are cited within the files of this plugin. 
