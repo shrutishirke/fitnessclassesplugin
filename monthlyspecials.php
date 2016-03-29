@@ -149,6 +149,17 @@ http://code.tutsplus.com/tutorials/create-a-shortcode-to-list-posts-with-multipl
 Lecture on Shortcodes by CCT460
 */
 
+/*Shortcode source: http://code.tutsplus.com/tutorials/create-a-shortcode-to-list-posts-with-multiple-parameters--wp-32199
+	The following is a nested loop starting from $query = new WP_Query ($args). This means that the second loop is still running 
+	before waiting for the 	first one to finish. This loop is used to display our list of posts. 
+	*The code states that if there are posts, give them a class of "Post" under the ul tag - which is what makes a list in terms of styling in html. 
+	*The php while loop states that  states that if there are posts, get the recent posts within the categories defined in the codes above from monthly specials and display a permalink title, so when the user clicks on it - they are taken to the specific post page which is there the wp_reset_postdata variable comes into play. 
+	*The li html feature makes the posts into a list format using the li html feature. 
+	*The while loop ($query-->have posts() ) also displays the posts outside the main loop for the purpose of the shorcode functionality. wp_reset_postdata function does not return any values and also it does not recieve parameters within it. 
+	
+	**Source: https://codex.wordpress.org/Function_Reference/wp_reset_postdata. The_permalink gets the permalink for the post used as a link with a title tag that is clickable as a URL displayed as the post's title on the frontend. wp_reset_postdata code reinstates the $post variable to the present post in the main query. This function does not return any values and also it does not recieve parameters within it. Source: https://codex.wordpress.org/Function_Reference/wp_reset_postdata. The ob_get_clean script gets the current buffer contents and deletes the outputted data's buffer.  
+	*/ 
+
 add_shortcode('phirefitness_shortcode', 'custom_post_type_shortcode');
   
 function custom_post_type_shortcode() {
