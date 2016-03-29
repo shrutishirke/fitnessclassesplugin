@@ -105,7 +105,8 @@ get them, save them and display them. */
 				
 <h3> 
   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?> 
-   <div class= "widgetpost"><?php the_post_thumbnail('category-thumbnail'); ?> </div></a> 
+   <div class= "widgetpost"><?php the_post_thumbnail('category-thumbnail'); ?> </div></a>
+   /* The class of widgetpost is assigned to the thumnail images as it enables us to further style the thumnails in pluginstyle.css. */
 
 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> 
 <?php 
