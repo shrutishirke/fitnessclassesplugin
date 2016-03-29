@@ -1,6 +1,6 @@
 ===== PhireFitness Gym, Monthly Specials Plugin ====
 /*
-* Theme Name: Monthly Specials Plugin
+* Plugin Name: Monthly Specials Plugin
 * Theme URI: https://phoenix.sheridanc.on.ca/~ccit3424/
 * Description: Monthly Specials Plugin File that displays special events the client has within a month for Client PhireFitness Gym
 * Authors/Contributors: Mayank Sharma, Nayab Safdar and Shruti Shirke (MSN Developers)
