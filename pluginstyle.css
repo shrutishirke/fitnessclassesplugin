@@ -10,9 +10,19 @@ overflow: hidden;
 border-radius: 15px 30px;
 text-align: center;
 
-    
+/* Source for images in widget:
+week 1 cardio: https://pixabay.com/en/fitness-treadmill-running-957115/
+week 2 spin: https://pixabay.com/en/spinning-cycling-indoor-cycling-1171843/
+week 3 yoga: https://pixabay.com/en/women-yoga-classes-fitness-asana-1179435/
+week 4 weightlifting: https://pixabay.com/en/weights-lifting-power-female-gym-652486/
 
-/* Source for responsive images within widget: http://www.sitepoint.com/css3-responsive-centered-image/ */
+Source for images in shortcode within "Additional Features" Tab:
+Fantastic Facilities: https://pixabay.com/en/gym-sports-hall-studio-dance-studio-526996/
+Terrific Trainers: https://pixabay.com/en/training-corporate-lecture-998351/
+Mental Wellness Tips: https://pixabay.com/en/running-runner-long-distance-573762/
+Nutrition Tips: https://pixabay.com/en/kimchi-fried-rice-fried-rice-rice-241051/
+    
+Source for responsive images within widget: http://www.sitepoint.com/css3-responsive-centered-image/ */
 
 @media screen and (orientation: portrait) {
   .widgetpost { max-width: 100%; }
