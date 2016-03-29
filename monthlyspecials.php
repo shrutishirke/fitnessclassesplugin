@@ -8,6 +8,20 @@ Version: 1.0
 Author URI: http://phoenix.sheridanc.on.ca/~ccit3424
 */
 
+/*References: 
+*http://www.makeuseof.com/tag/how-to-create-wordpress-widgets/
+ https://developer.wordpress.org/reference/functions/get_permalink/
+ https://wordpress.org/support/topic/how-to-link-post-in-custom-field-loop-help
+ https://codex.wordpress.org/Function_Reference/wp_parse_args
+ Lecture slides from Widget Lecture 
+ */
+
+//Enqueued stylesheet based on feedback from shortcode lab.
+function connect_widget_style(){
+	wp_register_style( 'pluginassignment', plugins_url( 'pluginassignment/pluginstyle.css') );
+	wp_enqueue_style('pluginassignment');
+}
+add_action('wp_enqueue_scripts', 'connect_widget_style' );
 
 class MonthlyFitnessWidget extends WP_Widget
 {
