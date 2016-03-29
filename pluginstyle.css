@@ -1,17 +1,31 @@
-#widgetpost
+.widgetpost
 {
-border-radius: 50% 50% 50% 50%;      
-padding: 0;
-overflow: hidden; 
+      
+padding: 0 ;
 position: relative;
 height: 60%;
 width: 60%;
-margin: 0 auto;
+margin: auto;
+overflow: hidden;
+border-radius: 15px 30px;
+text-align: center;
 
+    
+
+/* Source for responsive images within widget: http://www.sitepoint.com/css3-responsive-centered-image/ */
+
+@media screen and (orientation: portrait) {
+  .widgetpost { max-width: 100%; }
+}
+
+@media screen and (orientation: landscape) {
+  .widgetpost { max-height: 100%; }
+}
 
  }
  
 h3
 {
 font-size: 1em;
+text-align: center; 
 }
