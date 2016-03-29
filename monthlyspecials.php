@@ -105,8 +105,13 @@ get them, save them and display them. */
 				
 <h3> 
   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?> 
+  /* This code shows the clickable URL for the permalink that is being handled in the Loop. 
+  *This shows the permalink for each of the four posts & thumnail images. 
+  *The code shows the URL in the form of thumnail images.
+  *Source: https://codex.wordpress.org/Function_Reference/the_permalink */
+   
    <div class= "widgetpost"><?php the_post_thumbnail('category-thumbnail'); ?> </div></a>
-   /* The class of widgetpost is assigned to the thumnail images as it enables us to further style the thumnails in pluginstyle.css. */
+  
 
 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> 
 <?php 
