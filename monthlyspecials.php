@@ -88,4 +88,36 @@ wp_reset_query();
 add_action( 'widgets_init', function(){
   register_widget('MonthlyFitnessWidget' );
   });
+
+//PhireFitness Shortcode
+/*References
+http://stackoverflow.com/questions/27424064/wp-shortcode-to-query-custom-post-type-and-display-according-to-custom-meta-va
+http://php.net/manual/en/function.ob-get-clean.php
+http://code.tutsplus.com/tutorials/create-a-shortcode-to-list-posts-with-multiple-parameters--wp-32199
+Lecture on Shortcodes by CCT460
+*/
+
+add_shortcode('phirefitness_shortcode', 'custom_post_type_shortcode');
   
+function custom_post_type_shortcode() {
+	$args = array( 
+	'showposts' => '4',
+	'category_name' => 'features',
+	'order' => 'ASC'
+	
+	); 
+	$string = '';
+	$query = new WP_Query($args);
+	if ( $query->have_posts() ) { ?>
+        <ul class="Post">
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </li>
+            <?php endwhile;
+            wp_reset_postdata(); ?>
+        </ul>
+    <?php $shortcodebuffer = ob_get_clean();
+    return $shortcodebuffer;
+    }
+}  
